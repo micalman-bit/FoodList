@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding : Bool = true
     var body: some View {
-        VStack {
-            Image(systemName: "Lol")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                Text("You are in the main app!")
+            }
+            .navigationTitle("Home")
         }
-        .padding()
+        .fullScreenCover(isPresented: $shouldShowOnboarding, content: {
+            OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
+        })
     }
 }
 

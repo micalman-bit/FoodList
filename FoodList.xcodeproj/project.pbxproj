@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84220EF52904287900C5DBD1 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84220EF42904287900C5DBD1 /* Onboarding.swift */; };
 		84E5306329032570001F1D8C /* FoodListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E5306229032570001F1D8C /* FoodListApp.swift */; };
 		84E5306529032570001F1D8C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E5306429032570001F1D8C /* ContentView.swift */; };
 		84E5306729032572001F1D8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E5306629032572001F1D8C /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 		84E5307429032572001F1D8C /* FoodListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E5307329032572001F1D8C /* FoodListTests.swift */; };
 		84E5307E29032572001F1D8C /* FoodListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E5307D29032572001F1D8C /* FoodListUITests.swift */; };
 		84E5308029032572001F1D8C /* FoodListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E5307F29032572001F1D8C /* FoodListUITestsLaunchTests.swift */; };
+		84E530912903F84A001F1D8C /* onboardingFirst.json in Resources */ = {isa = PBXBuildFile; fileRef = 84E530902903F84A001F1D8C /* onboardingFirst.json */; };
+		84E530942903F8D6001F1D8C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 84E530932903F8D6001F1D8C /* Lottie */; };
+		84E530962903F941001F1D8C /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E530952903F941001F1D8C /* LottieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84220EF42904287900C5DBD1 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		84E5305F29032570001F1D8C /* FoodList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E5306229032570001F1D8C /* FoodListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListApp.swift; sourceTree = "<group>"; };
 		84E5306429032570001F1D8C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +49,8 @@
 		84E5307929032572001F1D8C /* FoodListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E5307D29032572001F1D8C /* FoodListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListUITests.swift; sourceTree = "<group>"; };
 		84E5307F29032572001F1D8C /* FoodListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		84E530902903F84A001F1D8C /* onboardingFirst.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = onboardingFirst.json; sourceTree = "<group>"; };
+		84E530952903F941001F1D8C /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E530942903F8D6001F1D8C /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +102,8 @@
 		84E5306129032570001F1D8C /* FoodList */ = {
 			isa = PBXGroup;
 			children = (
+				84E5308D2903F7BA001F1D8C /* Resource */,
+				84E5308C2903E6D1001F1D8C /* Onboarding */,
 				84E5306229032570001F1D8C /* FoodListApp.swift */,
 				84E5306429032570001F1D8C /* ContentView.swift */,
 				84E5306629032572001F1D8C /* Assets.xcassets */,
@@ -127,6 +137,39 @@
 			path = FoodListUITests;
 			sourceTree = "<group>";
 		};
+		84E5308C2903E6D1001F1D8C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				84220EF42904287900C5DBD1 /* Onboarding.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		84E5308D2903F7BA001F1D8C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				84E5308E2903F7D2001F1D8C /* Lottie */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		84E5308E2903F7D2001F1D8C /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				84E530952903F941001F1D8C /* LottieView.swift */,
+				84E5308F2903F7F5001F1D8C /* Json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		84E5308F2903F7F5001F1D8C /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				84E530902903F84A001F1D8C /* onboardingFirst.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +186,9 @@
 			dependencies = (
 			);
 			name = FoodList;
+			packageProductDependencies = (
+				84E530932903F8D6001F1D8C /* Lottie */,
+			);
 			productName = FoodList;
 			productReference = 84E5305F29032570001F1D8C /* FoodList.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +261,9 @@
 				Base,
 			);
 			mainGroup = 84E5305629032570001F1D8C;
+			packageReferences = (
+				84E530922903F8D6001F1D8C /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 84E5306029032570001F1D8C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E5306A29032572001F1D8C /* Preview Assets.xcassets in Resources */,
+				84E530912903F84A001F1D8C /* onboardingFirst.json in Resources */,
 				84E5306729032572001F1D8C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +309,8 @@
 			files = (
 				84E5306529032570001F1D8C /* ContentView.swift in Sources */,
 				84E5306329032570001F1D8C /* FoodListApp.swift in Sources */,
+				84220EF52904287900C5DBD1 /* Onboarding.swift in Sources */,
+				84E530962903F941001F1D8C /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +468,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"FoodList/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -447,6 +500,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"FoodList/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -583,6 +637,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84E530922903F8D6001F1D8C /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84E530932903F8D6001F1D8C /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84E530922903F8D6001F1D8C /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84E5305729032570001F1D8C /* Project object */;
 }
