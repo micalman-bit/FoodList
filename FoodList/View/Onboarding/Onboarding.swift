@@ -13,8 +13,8 @@ struct OnboardingView: View {
     var body: some View {
         TabView {
             PageOnboardingView(
-                title: "first",
-                subTitle: "first subtitle or description",
+                title: "Food List",
+                subTitle: "applicarion for searching recepts and foodlist",
                 showDismissButton: false,
                 shouldShowOnboarding: $shouldShowOnboarding
             )
