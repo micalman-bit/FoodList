@@ -2,7 +2,7 @@
 //  ItemModel.swift
 //  TodoList
 //
-//  Created by Nick Sarno on 3/2/21.
+//  Created by Andrey Samchenko on 21.10.2022.
 //
 
 import Foundation

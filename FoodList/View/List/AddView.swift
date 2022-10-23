@@ -2,23 +2,18 @@
 //  AddView.swift
 //  TodoList
 //
-//  Created by Nick Sarno on 3/2/21.
+//  Created by Andrey Samchenko on 21.10.2022.
 //
 
 import SwiftUI
 
 struct AddView: View {
-    
-    // MARK: PROPERTIES
-    
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var listViewModel: ListViewModel
     @State var textFieldText: String = ""
     
     @State var alertTitle: String = ""
     @State var showAlert: Bool = false
-    
-    // MARK: BODY
     
     var body: some View {
         ScrollView {
@@ -45,8 +40,6 @@ struct AddView: View {
         .alert(isPresented: $showAlert, content: getAlert)
     }
     
-    // MARK: FUNCTIONS
-    
     func saveButtonPressed() {
         if textIsAppropriate() {
             listViewModel.addItem(title: textFieldText)
@@ -68,8 +61,6 @@ struct AddView: View {
     }
     
 }
-
-    // MARK: PREVIEW
 
 struct AddView_Previews: PreviewProvider {
     static var previews: some View {

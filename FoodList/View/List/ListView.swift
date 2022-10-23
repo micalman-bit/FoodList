@@ -2,7 +2,7 @@
 //  ListView.swift
 //  TodoList
 //
-//  Created by Nick Sarno on 3/2/21.
+//  Created by Andrey Samchenko on 21.10.2022.
 //
 
 import SwiftUI
@@ -41,12 +41,3 @@ struct ListView: View {
     }
 
 }
-//
-//struct ListView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        NavigationView {
-//            ListView()
-//        }
-//        .environmentObject(ListViewModel())
-//    }
-//}

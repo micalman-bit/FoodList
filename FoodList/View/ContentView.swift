@@ -43,12 +43,6 @@ struct ContentView: View {
                     NavigationView {
                         ListView()
                     }
-//                    NavigationView {
-//                        VStack {
-//                            Text("You are in the main app!")
-//                        }
-//                        .navigationTitle("Home")
-//                    }
                 case 1:
                     NavigationView {
                         VStack {
